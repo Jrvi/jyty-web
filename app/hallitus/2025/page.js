@@ -1,14 +1,9 @@
-import React from 'react'
-import Link from 'next/Link'
+export default function HallitusPage() {
+  return (
+    <div>
+      <h1>Hallitus 2025</h1>
 
-
-export default function HallitusList() {
-    return (
-      <div>
-        <h1>Hallitus</h1>
-        <p>Istuva hallitus</p>
-
-        <h3>Puheenjohtaja</h3>
+      <h3>Puheenjohtaja</h3>
         <p>Juho Järvi</p>
 
         <h3>Varapuheenjohtaja</h3>
@@ -34,14 +29,6 @@ export default function HallitusList() {
 
         <h3>Theo :D</h3>
         <p>Theodore Veistos</p>
-
-        <h2>Kaikki hallitukset</h2>
-        <ul>
-          <li>
-            <Link href='/hallitus/2025'>Hallitus 2025</Link>
-          </li>
-        </ul>
-      </div>
-    )
-
-  }
+    </div>
+  );
+}
