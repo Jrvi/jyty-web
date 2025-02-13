@@ -1,5 +1,12 @@
-import React from 'react';
+import React from 'react'
+import Link from 'next/Link'
 
-export default function Page() {
-    return <h1>Hello, Next.js.</h1>
+export default function KiltaList() {
+    return (
+      <div>
+        <h1>Jäsen killat</h1>
+
+        <Link href='/killat/algo'>Algo ry</Link>
+      </div>
+    )
   }
