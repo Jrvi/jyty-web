@@ -1,6 +1,6 @@
-"use client"
+'use client'
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 export default function Page() {
     const [formData, setFormData] = useState({
@@ -14,7 +14,7 @@ export default function Page() {
         setFormData({
             ...formData,
             [name]: value
-        });
+        })
     }
 
     const handleSubmit = (e) => {
@@ -37,39 +37,39 @@ export default function Page() {
             <h2>Liity jäseneksi</h2>
             <form onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="name">Nimi:</label>
+                    <label htmlFor='name'>Nimi:</label>
                     <input
-                        type="text"
-                        id="name"
-                        name="name"
+                        type='text'
+                        id='name'
+                        name='name'
                         value={formData.name}
                         onChange={handleChange}
                     />
                 </div>
                 <div>
-                    <label htmlFor="email">Sähköposti:</label>
+                    <label htmlFor='email'>Sähköposti:</label>
                     <input
-                        type="email"
-                        id="email"
-                        name="email"
+                        type='email'
+                        id='email'
+                        name='email'
                         value={formData.email}
                         onChange={handleChange}
                     />
                 </div>
                 <div>
-                    <label htmlFor="membershipType">Jäsenyyden tyyppi:</label>
+                    <label htmlFor='membershipType'>Jäsenyyden tyyppi:</label>
                     <select
-                        id="membershipType"
-                        name="membershipType"
+                        id='membershipType'
+                        name='membershipType'
                         value={formData.membershipType}
                         onChange={handleChange}
                     >
-                        <option value="jäsenjärjestö">Jäsenjärjestö</option>
-                        <option value="varsinaiset jäsenet">Varsinaiset jäsenet</option>
-                        <option value="kannatusjäsenet">Kannatusjäsenet</option>
+                        <option value='jäsenjärjestö'>Jäsenjärjestö</option>
+                        <option value='varsinaiset jäsenet'>Varsinaiset jäsenet</option>
+                        <option value='kannatusjäsenet'>Kannatusjäsenet</option>
                     </select>
                 </div>
-                <button type="submit">Lähetä</button>
+                <button type='submit'>Lähetä</button>
             </form>
         </div>
     )

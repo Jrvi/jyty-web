@@ -1,4 +1,3 @@
-import React from 'react';
 
 export default function Page() {
     return (
@@ -6,5 +5,5 @@ export default function Page() {
             <h1>Teekkarilakki säännöt</h1>
             <p>Tähän teekkarilakki säännöt</p>
         </div>
-    );
+    )
 }
