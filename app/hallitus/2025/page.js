@@ -30,5 +30,5 @@ export default function HallitusPage() {
         <h3>Theo :D</h3>
         <p>Theodore Veistos</p>
     </div>
-  );
+  )
 }
