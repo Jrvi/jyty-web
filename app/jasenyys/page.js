@@ -10,7 +10,7 @@ export default function Page() {
     })
 
     const handleChange = (e) => {
-        const { name, value } = e.target;
+        const { name, value } = e.target
         setFormData({
             ...formData,
             [name]: value
@@ -18,9 +18,9 @@ export default function Page() {
     }
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault()
         // Täällä sitten käsitellään lomakkeen lähetys vaikka sihteerin sähköpostiin
-        console.log('Lomakkeen tiedot:', formData);
+        console.log('Lomakkeen tiedot:', formData)
     }
 
     return (

@@ -2,18 +2,18 @@
 
 import './globals.css'
 import Link from 'next/link'
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import Container from '@mui/material/Container';
-import { useState } from 'react';
-import { createTheme, ThemeProvider, useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import IconButton from '@mui/material/IconButton';
+import AppBar from '@mui/material/AppBar'
+import Toolbar from '@mui/material/Toolbar'
+import Typography from '@mui/material/Typography'
+import Button from '@mui/material/Button'
+import Menu from '@mui/material/Menu'
+import MenuItem from '@mui/material/MenuItem'
+import Container from '@mui/material/Container'
+import { useState } from 'react'
+import { createTheme, ThemeProvider, useTheme } from '@mui/material/styles'
+import Box from '@mui/material/Box'
 import { CssBaseline } from '@mui/material'
+import PropTypes from 'prop-types'
 //import TelegramIcon from '@mui/icons-material/Telegram';
 //import LinkedInIcon from '@mui/icons-material/LinkedIn';
 //import InstagramIcon from '@mui/icons-material/Instagram';
@@ -118,13 +118,13 @@ const naturalTheme = createTheme({
   },
 })
 
-const NavBar = ({ onThemeChange, currentTheme }) => {
+const NavBar = ({ onThemeChange }) => {
   const [anchorElYhdistys, setAnchorElYhdistys] = useState(null)
   const [anchorElOhjesaannot, setAnchorElOhjesaannot] = useState(null)
   const [anchorElTheme, setAnchorElTheme] = useState(null)
 
   const handleClickYhdistys = (event) => {
-    setAnchorElYhdistys(event.currentTarget);
+    setAnchorElYhdistys(event.currentTarget)
     setAnchorElOhjesaannot(null)
     setAnchorElTheme(null)
   }
@@ -191,8 +191,12 @@ const NavBar = ({ onThemeChange, currentTheme }) => {
   )
 }
 
+NavBar.propTypes = {
+  onThemeChange: PropTypes.func.isRequired,
+}
+
 const Footer = () => {
-  const theme = useTheme();
+  const theme = useTheme()
   return (
     <Box component="footer" sx={{ py: 3, px: 2, mt: 'auto', backgroundColor: theme.palette.primary.main, color: theme.palette.secondary.main }}>
       <Container maxWidth="sm">
@@ -205,7 +209,7 @@ const Footer = () => {
         </Box>
       </Container>
     </Box>
-  );
+  )
 }
 
 export default function RootLayout({children}) {
@@ -246,4 +250,8 @@ export default function RootLayout({children}) {
       </body>
     </html>
   )
+}
+
+RootLayout.propTypes = {
+  children: PropTypes.node.isRequired,
 }
