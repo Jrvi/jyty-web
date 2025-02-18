@@ -24,7 +24,7 @@ export default function Page() {
     }
 
     return (
-        <div>
+        <div className='container'>
             <h1>Jäsenyys</h1>
             <h2>Jäsenjärjestöt</h2>
             <p>

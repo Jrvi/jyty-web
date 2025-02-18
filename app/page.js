@@ -1,5 +1,10 @@
 import React from 'react';
 
 export default function Page() {
-    return <h1>Hello, Next.js.</h1>
-  }
+    return (
+        <div className='container'>
+            <h1>Jyväskylän Teekkariyhdistys</h1>
+            <p>Tervetuloa Jyväskylän teekkariyhdistyksen kotisivuille!</p>
+        </div>
+    );
+}

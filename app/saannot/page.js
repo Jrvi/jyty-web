@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Page() {
   return (
-    <div>
+    <div className='container'>
       <h1>Säännöt</h1>
 
 
