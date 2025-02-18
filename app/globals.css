@@ -1,6 +1,12 @@
 :root {
     --background: #ffffff;
     --foreground: #171717;
+    --primary-color: #000; /* tähän meidän pääväri */
+    --secondary-color: #fff; /* tähän meidän toinen väri */
+    --font-family: 'Arial', 'sans-serif';
+    --heading-font-size: 2em;
+    --paragraph-font-size: 1em;
+    --line-height: 1.6;
 }
   
 /*  @media (prefers-color-scheme: dark) {
@@ -13,6 +19,8 @@
 body {
     color: var(--foreground);
     background: var(--background);
+    font-family: var(--primary-color);
+    line-height: var(--line-height);
 }
 
 nav {

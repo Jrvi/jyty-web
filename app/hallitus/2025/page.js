@@ -1,6 +1,6 @@
 export default function HallitusPage() {
   return (
-    <div>
+    <div className="container">
       <h1>Hallitus 2025</h1>
 
       <h3>Puheenjohtaja</h3>

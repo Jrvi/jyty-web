@@ -3,8 +3,8 @@ import React from 'react';
 export default function Page() {
     return (
         <div className='container'>
-            <h1>Jyväskylän Teekkariyhdistys</h1>
-            <p>Tervetuloa Jyväskylän teekkariyhdistyksen kotisivuille!</p>
+            <h1>Teekkarilakki säännöt</h1>
+            <p>Tähän teekkarilakki säännöt</p>
         </div>
     );
 }

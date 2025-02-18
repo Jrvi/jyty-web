@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function HallitusList() {
     return (
-      <div>
+      <div className='container'>
         <h1>Hallitus</h1>
         <p>Istuva hallitus</p>
 
