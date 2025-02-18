@@ -27,10 +27,10 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Build Docker image for Raspberry Pi
+    - name: Build Docker image for Raspberry Pi (arm64)
       run: |
         docker buildx create --use
-        docker buildx build --platform linux/arm64,linux/arm/v7 -t website:latest --load .
+        docker buildx build --platform linux/arm64 -t website:latest --load .
 
     - name: Set up SSH
       uses: webfactory/ssh-agent@v0.5.3
