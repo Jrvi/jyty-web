@@ -48,4 +48,4 @@ jobs:
       run: ssh juhojarvi@62.248.139.131 'docker stop website || true && docker rm website || true'
 
     - name: Deploy Docker container on Raspberry Pi
-      run: ssh juhojarvi@62.248.139.131 'docker run -d --name website website:latest'
+      run: ssh juhojarvi@62.248.139.131 'docker run -d -p 8000:80 --name website website:latest'
