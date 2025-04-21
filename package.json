@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "dotnet": "^1.1.4",
     "next": "^15.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
