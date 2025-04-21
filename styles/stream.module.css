@@ -1,0 +1,48 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    iframe {
+        border: none;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+      }
+}
+
+@media screen and (orientation:portrait) {
+    .main {
+        flex-direction: column;
+    }
+
+    .stream {
+        width: 100%;
+        height: min(56vh, 57vw);
+    }
+
+    .chat {
+        width: 100%;
+        height: 500px;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (orientation:landscape) {
+    .main {
+        flex-direction: row;
+    }
+
+    .stream {
+        float: left;
+        height: 41vw;
+        flex: 5;
+    }
+
+    .chat {
+        flex: 2;
+        height: 80vh;
+        margin-left: 1em;
+        float: right;
+    }
+}

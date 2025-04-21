@@ -45,6 +45,19 @@ export default function Navbar() {
           </li>
           <li className="nav-item">
             <Link
+              href="/vappustriimi"
+              className="nav-link"
+              onMouseEnter={() => handleMouseEnter("vappustriimi")}
+              onMouseLeave={handleMouseLeave}
+              style={{
+                color: hoveredLink === "vappustriimi" ? "#ff4500" : undefined,
+              }}
+            >
+              Vappustriimi
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
               href="/hallitus"
               className="nav-link"
               onMouseEnter={() => handleMouseEnter("hallitus")}
