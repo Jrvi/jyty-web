@@ -76,7 +76,7 @@ const articles = [
       <p>Jos siis tähänkin asti Jyväskylän teekkarituotantoa on vaivannut jonkinlainen aivan liian vapaa henki, niin vielä pahempaa on luvassa, kun teekkariohjelmat leviävät matemaattis-luonnontieteelliseen tiedekuntaan. Epäilemättä diversiteetti ja sekoilun määrä vain lisääntyvät. Tuskin kuitenkaan on epäilyksiä etteikö jo olemassa oleva ponteva, mutta hiukan vinossa oleva teekkarihenki leviäisi myös uusien ohjelmien kandidaatteihin.</p>
     `,
     image: null,
-    author: "Jyväskylän teekkareiden matemaattinen tukihenkilö"
+    author: "Jyväskylän teekkareiden matemaattinen tukihenkilö, Roope"
   }
 ];
 
