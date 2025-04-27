@@ -203,6 +203,94 @@ a {
   color: #555;
 }
 
+.crossword-container {
+  max-width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fffbe6;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  gap: 5px;
+  justify-content: center;
+}
+
+.cell-container {
+  position: relative;
+}
+
+.cell-number {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 0.7rem;
+  color: #555;
+}
+
+input.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+}
+
+input.empty {
+  background-color: transparent;
+  border: none;
+}
+
+.clues {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  list-style: none;
+}
+
+.clues li {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.clues li::before {
+  content: "• ";
+  font-weight: bold;
+}
+
+/* Responsiiviset tyylit mobiililaitteille */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(5, 30px); /* Vähemmän sarakkeita ja pienemmät solut */
+    gap: 3px;
+  }
+
+  input.cell {
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+  }
+
+  .cell-number {
+    font-size: 0.6rem;
+  }
+
+  .crossword-container {
+    padding: 10px;
+  }
+}
+
 /* ==========================
    Layout-tyylit
 ========================== */

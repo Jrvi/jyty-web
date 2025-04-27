@@ -1,3 +1,4 @@
+import Crossword from "../components/Crossword";
 import Layout from "../components/Layout";
 
 const articles = [
@@ -110,6 +111,7 @@ export default function Vappu() {
             )
           )}
         </div>
+        <Crossword />
       </div>
     </Layout>
   );
