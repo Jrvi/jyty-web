@@ -12,7 +12,7 @@ const articles = [
       <p>Ensin tuli nimi, sitten kolme vanhusta, jotka vannottiin vastuuhenkilöiksi ennen kuin he ehtivät kunnolla tajuta mistä on kyse. Sitten tapahtui Telegram-ryhmän, hemmo piirsi kannen, ja joku kolmas keksi yhdistykselle virallisen nimen aikana, jolloin virallisuus oli hyvin suhteellinen käsite.</p>
       <p>Vaikka tarina alkoi hämyisestä Kuokkalasta ja kädenlämpöisestä boolista, se elää yhä jokaisessa huonossa ideassa, joka muuttuu legendaksi.</p>
     `,
-    image: "rentoruusu.jpg",
+    image: "rentoruusu.JPG",
     author: "Eemil Hukkanen ja Kasper Pelkonen",
   },
   {
