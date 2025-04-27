@@ -12,7 +12,7 @@ const articles = [
       <p>Ensin tuli nimi, sitten kolme vanhusta, jotka vannottiin vastuuhenkilöiksi ennen kuin he ehtivät kunnolla tajuta mistä on kyse. Sitten tapahtui Telegram-ryhmän, hemmo piirsi kannen, ja joku kolmas keksi yhdistykselle virallisen nimen aikana, jolloin virallisuus oli hyvin suhteellinen käsite.</p>
       <p>Vaikka tarina alkoi hämyisestä Kuokkalasta ja kädenlämpöisestä boolista, se elää yhä jokaisessa huonossa ideassa, joka muuttuu legendaksi.</p>
     `,
-    image: "rentoruusu.JPG",
+    image: "rentoruusu.jpg",
     author: "Eemil Hukkanen ja Kasper Pelkonen",
   },
   {
@@ -48,7 +48,7 @@ const articles = [
          - Innsbruckissa <br>
          - joku huhtikuinen ilta paikallisessa</p>
     `,
-    image: "https://placehold.co/600x400",
+    image: "kaljat.jpg",
     author: "Moguli",
   },
   {
@@ -59,11 +59,25 @@ const articles = [
       <p>Kuvitelkaa JYTYn vappuvisio koossa. Fyysinen lehti, räväkät jutut ja myyntipiste kompassilla opiskelijajoukko kerääntyy ihastelemaan! Sitten kuuluu piip piip piip: pankki ei hyväksy pöytäkirjojamme. Lähetimme ne korjattuina, uudesta kokouksesta pöytäkirjoina, mutta mikään lähetys ei herättänyt pankin kiinnostusta. Tili on edelleen mysteeri, ja vappulehti odottaa painokuntoa tai siis ei odota, vaan on karannut verkkoon.</p>
       <p>Syntyi byrokratian kevätkaruselli. Pöytäkirjat kasaantuivat pankin inboksiin, ja JYTYn suuret vappu unelmat kutistuivat kokoon kuin fuksilakki kevätauringossa. “Painetaan lehdet, myydään haalarimerkkejä!”, mutta ensin piti ratkaista tiliasia. Pankilta tuli vain samaa vastausta ja lehden kansi jäi haamulehdelle ikuisesti odottamaan.</p>
       <p>Lopulta luovutimme fyysisen lehden kanssa ja hyppäsimme digitaaliseen vaappulehteen. Tervetuloa tähän digitaaliseen vapu_Lehoon, jossa lehden sivut skrollautuvat ja jutut latautuvat sekunneissa.</p>
-      <p>Kevään opetus? Jos haaveilet vappulehden myyntipöydästä, varmista ensin pankkitili – tai suosi suoraan virtuaaliversiota.</p>
+      <p>Kevään opetus? Jos haaveilet vappulehden myyntipöydästä, varmista ensin pankkitili – tai suosi suoraan verkkoon.</p>
     `,
-    image: "tili.png",
+    image: null,
     author: "Juho Järvi"
   },
+  {
+    id: 6,
+    type: "article",
+    title: "Matematiikan tukihenkilön mietteen teekkareista",
+    content: `
+      <p>Teekkarielämä Jyväskylässä alkoi vuonna 2021 ilman suurempia fanfaareja. Ensimmäisissä kastajaisissa veteen upposi pienehkö joukko aloittelevia opiskelijoita. Kun kalpeat teekkarit nousivat vedestä hytisten, tuntui mahdolliselta, että Jyväsjärvi sammuttaisi teekkarihengen liekin ennen kuin se edes ehtii kunnolla syttymään. Pienimuotoinen alku ei kuitenkaan ollut huono enne, ehkäpä päinvastoin. Muutamassa vuodessa tekniikanopiskelijoiden määrä on kasvanut, jollei räjähdysmäisesti, niin ainakin jollakin tavoin tussahtaen. Nykyiselläänhän Algolaisia ei voi juuri olla näkemättä..vaikka aktiivisesti yrittäisikin.</p>
+      <p>Mutta millaisia Jyväskylän teekkareista sitten on oikein tullut?</p>
+      <p>Ideaaliset tekniikan opiskelijathan ovat valtionhallinnon koulutusstrategian mukaan yhdenmukaisia ja keskikokoisia. Kivikylän palvaamoa ja yliopiston tavoitteita lainaten :”Opetusprosessi vaatii tarkkuutta, jotta insinöörit ovat tasalaatuisia ja kauniin muotoisia. Tärkeää on, että opiskelijamateriaali on mahdollisimman tuoretta ja laadukasta. Lisäksi tarvitaan mausteita, suolaa ja muita lisäaineita, jotka antavat insinöörille sen tunnusomaisen maun ja rakenteen.”</p>
+      <p>Jokin osa tässä prosessissa lienee onnistunut. Jyväskylän teekkareissa, kuten myös makkaroissa on, sikamaisia piirteitä. Tarkasti harkittu vaaleanpunamusta haalari edustaa ajatusta tukevasti mudassa olevista sorkista ja täynnä humanistisia ajatuksia olevasta päästä. Insinöörien mauttomuuteen tai rakenteeseen en ota kantaa. Homogeenisuuden tavoite lienee kuitenkin epäonnistunut liki totaalisesti. Vaikka yrittäisikin, niin näin heterogeenisen joukon kokoaminen ei välttämättä onnistuisi.</p>
+      <p>Jos siis tähänkin asti Jyväskylän teekkarituotantoa on vaivannut jonkinlainen aivan liian vapaa henki, niin vielä pahempaa on luvassa, kun teekkariohjelmat leviävät matemaattis-luonnontieteelliseen tiedekuntaan. Epäilemättä diversiteetti ja sekoilun määrä vain lisääntyvät. Tuskin kuitenkaan on epäilyksiä etteikö jo olemassa oleva ponteva, mutta hiukan vinossa oleva teekkarihenki leviäisi myös uusien ohjelmien kandidaatteihin.</p>
+    `,
+    image: null,
+    author: "Jyväskylän teekkareiden matemaattinen tukihenkilö"
+  }
 ];
 
 export default function Vappu() {
@@ -76,10 +90,12 @@ export default function Vappu() {
             item.type === "article" ? (
               <div key={item.id} className="article-container">
                 <h2 className="article-title">{item.title}</h2>
-                <figure className="article-figure">
-                  <img src={item.image} alt={item.title} className="article-image" />
-                  <figcaption className="article-caption">{`Kuva: ${item.title}`}</figcaption>
-                </figure>
+                {item.image && (
+                  <figure className="article-figure">
+                    <img src={item.image} alt={item.title} className="article-image" />
+                    <figcaption className="article-caption">{`Kuva: ${item.title}`}</figcaption>
+                  </figure>
+                )}
                 <div
                   className="article-content"
                   dangerouslySetInnerHTML={{ __html: item.content }}

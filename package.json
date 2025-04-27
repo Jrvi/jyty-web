@@ -2,6 +2,7 @@
   "dependencies": {
     "dotnet": "^1.1.4",
     "next": "^15.3.0",
+    "puppeteer": "^24.6.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^5.5.0"

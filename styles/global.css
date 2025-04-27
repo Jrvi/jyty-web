@@ -40,6 +40,37 @@ a {
 }
 
 /* ==========================
+    Kotisivu tyylit
+========================== */
+.home-highlight {
+  color: red;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.home-container .home-text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.home-container .home-logo {
+  flex-shrink: 0;
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.home-container .home-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================
    Hallitus-sivun tyylit
 ========================== */
 .hallitus-title {
@@ -80,6 +111,20 @@ a {
   word-wrap: break-word;
 }
 
+.hallitus-contact {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.hallitus-contact a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.hallitus-contact a:hover {
+  text-decoration: underline;
+}
+
 /* ==========================
    Vappulehti-sivun tyylit
 ========================== */
@@ -91,12 +136,12 @@ a {
 }
 
 .article-container {
-  margin-bottom: 40px; /* Jo olemassa oleva marginaali */
+  margin-bottom: 40px;
   text-align: left;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: rgb(0, 102, 204);
+  background-color: rgb(0, 2500,255);
 }
 
 .article-container + .article-container {
@@ -178,6 +223,30 @@ a {
   align-items: center;
   flex: 1;
   padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-content a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+  color: #0056b3;
 }
 
 /* ==========================
@@ -382,12 +451,36 @@ header {
   .desktop-only {
     display: none;
   }
+
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-title {
+    font-size: 2em;
+  }
+
+  .home-highlight,
+  .home-paragraph {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+
+  .home-list {
+    font-size: 0.9em;
+  }
+
+  .home-logo {
+    display: none;
+  }
 }
 
 .home-container {
   text-align: left;
   margin: 0 auto;
-  max-width: 800px; /* Halutessasi voit rajoittaa leveyttä */
+  max-width: 800px;
   padding: 20px;
 }
 
@@ -451,6 +544,12 @@ header {
 
   .desktop-only {
     display: block;
+  }
+
+  .article-container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 40px;
   }
 }
 

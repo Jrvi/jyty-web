@@ -4,47 +4,47 @@ const members = [
   {
     name: "Juho Järvi",
     title: "Puheenjohtaja",
-    image: "https://placehold.co/150",
+    image: "hallitus/juho.jpg",
   },
   {
     name: "Eemil Hukkanen",
     title: "Varapuheenjohtaja",
-    image: "https://placehold.co/150",
+    image: "hallitus/eemil.jpg",
   },
   {
     name: "Ilmo Kurki",
     title: "Sihteeri",
-    image: "https://placehold.co/150",
+    image: "hallitus/ilmo.jpg",
   },
   {
     name: "Nuutti Rantanen",
     title: "Rahastonhoitaja",
-    image: "https://placehold.co/150",
+    image: "hallitus/nuutti.jpg",
   },
   {
     name: "Kasper Pelkonen",
     title: "Kiltavastaava",
-    image: "https://placehold.co/150",
+    image: "hallitus/kassu.jpg",
   },
   {
     name: "Lassi Laitinen",
     title: "Teekkarikulttuurivastaava",
-    image: "https://placehold.co/150",
+    image: "hallitus/lassi.jpg",
   },
   {
     name: "Atte Heikkinen",
     title: "Viestintävastaava",
-    image: "https://placehold.co/150",
+    image: "hallitus/atte.jpg",
   },
   {
     name: "Juho Kallijärvi",
     title: "Mediavastaava",
-    image: "https://placehold.co/150",
+    image: "hallitus_placeholder.png",
   },
   {
     name: "Theodore Veistos",
     title: "Somevastaava",
-    image: "https://placehold.co/150",
+    image: "hallitus_placeholder.png",
   },
 ];
 
@@ -61,6 +61,10 @@ export default function Hallitus() {
               <p>{member.title}</p>
             </div>
           ))}
+        </div>
+        <div className="hallitus-contact">
+          <h2>Ota yhteyttä</h2>
+          <p>Sähköposti: <a href="mailto:jyvaskylanteekkarit@gmail.com">jyvaskylanteekkarit@gmail.com </a></p>
         </div>
       </div>
     </Layout>
