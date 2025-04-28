@@ -135,6 +135,41 @@ a {
   color: #333;
 }
 
+.table-of-contents {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-of-contents h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.table-of-contents ul {
+  list-style: none;
+  padding: 0;
+}
+
+.table-of-contents li {
+  margin-bottom: 10px;
+}
+
+.table-of-contents a {
+  text-decoration: none;
+  color: #0070f3;
+  font-weight: bold;
+}
+
+.table-of-contents a:hover {
+  text-decoration: underline;
+}
+
 .article-container {
   margin-bottom: 40px;
   text-align: left;

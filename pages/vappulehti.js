@@ -97,10 +97,25 @@ export default function Vappu() {
     <Layout>
       <div className="container">
         <h1 className="vappu-title">Jyty Vapu_leho</h1>
+        
+        {/* Sisällysluettelo */}
+        <nav className="table-of-contents">
+          <h2>Sisällysluettelo</h2>
+          <ul>
+            {articles
+              .filter((item) => item.type === "article")
+              .map((item) => (
+                <li key={item.id}>
+                  <a href={`#article-${item.id}`}>{item.title}</a>
+                </li>
+              ))}
+          </ul>
+        </nav>
+
         <div>
           {articles.map((item) =>
             item.type === "article" ? (
-              <div key={item.id} className="article-container">
+              <div key={item.id} id={`article-${item.id}`} className="article-container">
                 <h2 className="article-title">{item.title}</h2>
                 {item.image && (
                   <figure className="article-figure">
