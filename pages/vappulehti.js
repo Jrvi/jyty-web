@@ -18,12 +18,23 @@ const articles = [
   },
   {
     id: 2,
-    type: "quote",
-    content: "“Mikä vitun setämies kerho”",
-    author: "Tuntematon",
+    type: "article",
+    title: "Teekkarit Jyväskylässä",
+    content: `
+      <p>Teekkarit ovat tulleet Jyväskylään jäädäkseen. Mitä ajatuksia teekkarit, teekkarikulttuuri ja jyvääskyläläisyys yhdessä herättävät? - Itse paljasjalkaisena jyväskyläläisenä on yhä vähän outo ajatus että täällä on teekkareita. Niin pitkään kun muistan JYU on tunnettu opetuspuolen linjoista, ei teknisestä puolesta. Sitä varten ajattelin täällä olevan ammattikorkea, kertoo tilastotieteiden ainejärjestö Tiltti ry:n puheenjohtaja Juho Reiman.</p>
+      <p>Nykyisen kahden teekkarilinjan lisäksi Jyväskylään on tulossa kaksi uutta teekkarialaa, datatiede ja turvallisuusteknologia. Täten myös jyväskyläläinen teekkariyhteisö kasvaa ja kaupunkiin virtaa lisää teekkareita kaupunkilaisten iloksi. - Toivon että tilasto- ja datatieteiden tutkimusohjelman muuttaminen DI-ohjelmaksi toisi niitä uusia hakijoita alalle. Varsinkin kun kyseessä on maan ainoa tilastotieteen maisteritason ohjelma. Tilastotiede kuitenkin on modernissa informaatioyhteiskunnassa aika oleellinen ala, Juho kommentoi. Tulevat teekkarit pääsevätkin osaksi jo muutaman vuoden kehittynyttä jyvääskyläläistä teekkariyhteisöä. - Meillä on täällä mahtava [teekkari-]kulttuuri, kehuu Algo ry:n varapuheenjohtaja Essi Pakkala. Nykyään Algo on Jyväskylän ainoa teekkarikilta, mutta näin ei välttämättä ole kauaa uusien opinto-ohjelmien alkamisen jälkeen. - Koska tilastotieteen koko linjasta tulee teekkarilinja, niin Tiltistä on mitä todennäköisemmin tulossa Jyväskylän vanhin teekkarijärjestö, Tiltistä huudellaan.</p>
+      <p>Tulevaa onkin jo pohdittu ja visioitu, sillä teekkarikulttuurissa on oleellista sen eläminen ajan mukana. Teekkarit ovat kuitenkin jo jättäneet jälkensä Suomen Ateenaan, sillä esimerkiksi teekkarikasteesta on tullut tärkeä osa vapun juhlintaa. Yksi osoitus teekkarikulttuurin kehittämisestä on tämä ensimmäinen jyväskyläläisten teekkareiden tekemä vappulehti. - Pian meillä yhtä iso vappulehti kuin Julkku ja Äpy, Essi visioi. Tätä vappulehtipuutosta JYTY on lähtenyt ensimmäisenä korjaamaan. Mutta aika näyttää, mitä kaikkea teekkarit ja JYTY keksivät tulevaisuudessa.</p>
+    `,
+    author: "Lassi Laitinen"
   },
   {
     id: 3,
+    type: "quote",
+    content: "“Mikä vitun setämies kerho”",
+    author: "Rene Kangas",
+  },
+  {
+    id: 4,
     type: "article",
     title: "Perustamiskokous",
     content: `
@@ -36,7 +47,7 @@ const articles = [
     author: "Juho Järvi",
   },
   {
-    id: 4,
+    id: 5,
     type: "article",
     title: "Kansainvälisen Teekkarin Sanat",
     content: `
@@ -53,7 +64,7 @@ const articles = [
     author: "Moguli",
   },
   {
-    id: 5,
+    id: 6,
     type: "article",
     title: "JYTYn vappu ilman tiliä",
     content: `
@@ -66,9 +77,9 @@ const articles = [
     author: "Juho Järvi"
   },
   {
-    id: 6,
+    id: 7,
     type: "article",
-    title: "Matematiikan tukihenkilön mietteen teekkareista",
+    title: "Matematiikan tukihenkilön mietteet teekkareista",
     content: `
       <p>Teekkarielämä Jyväskylässä alkoi vuonna 2021 ilman suurempia fanfaareja. Ensimmäisissä kastajaisissa veteen upposi pienehkö joukko aloittelevia opiskelijoita. Kun kalpeat teekkarit nousivat vedestä hytisten, tuntui mahdolliselta, että Jyväsjärvi sammuttaisi teekkarihengen liekin ennen kuin se edes ehtii kunnolla syttymään. Pienimuotoinen alku ei kuitenkaan ollut huono enne, ehkäpä päinvastoin. Muutamassa vuodessa tekniikanopiskelijoiden määrä on kasvanut, jollei räjähdysmäisesti, niin ainakin jollakin tavoin tussahtaen. Nykyiselläänhän Algolaisia ei voi juuri olla näkemättä..vaikka aktiivisesti yrittäisikin.</p>
       <p>Mutta millaisia Jyväskylän teekkareista sitten on oikein tullut?</p>
