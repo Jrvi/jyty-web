@@ -161,6 +161,19 @@ const articles = [
     <p>Olemme monitieteellinen perustajajoukko, jonka yhteinen teekkarisydän sykkii Jyväskylän oman teekkariyhteisön rakentamiselle. Haluamme luoda kampukselle kulttuurin, jossa rautainen osaaminen, rennot sitsit, perinteinen Wappuhulluus ja Keski-Suomen omaleimainen twisti elävät sulassa sovussa, ja samalla päivittää teekkariperinteet nykypäivän arvoihin. Jos teekkarihumu ja perinteiden luominen sykahdyttää, niin liity mukaan syksyllä. tule vaikuttamaan siihen, miltä Jyväskylän teekkarikulttuuri näyttää vuosikymmeniksi eteenpäin!</p>
     `,
     author: "Eemil Hukkanen ja Juho Järvi"
+  },
+  {
+    id: 11,
+    type: "article",
+    title: "Ynnän mietteet",
+    content: `
+    <p>Ynnässä on tykätty ottaa vaikutteita teekkariperinteistä, ja nähdään teekkarien saapuminen Jyväskylään ehdottoman hyvänä asiana. Tähän mennessä Algon kasvua ja menoa ollut mukava seurata, joten uskon uusien matemaattisluonnontieteellisten DI-linjojen varmasti tuovan koko Jyväskylän kaupunkiin paljon lisää hyvää ja menevää opiskelijakulttuuria. Tulevista DI-ohjelmista etenkin turvallisuusteknologian linja on Ynnän toiminnalle oleellinen, sillä se tulee olemaan fysiikkapainotteinen linja. Olemme viime vuonna keskustelleet fysiikan laitoksen kanssa kyseisen DI-ohjelman opiskelijoiden sisällyttämisestä Ynnän toimintaan ainakin siihen asti, kunnes linjan opiskelijat perustavat oman killan.</p>
+    <p>Hyvää vappua toivottaen</p>
+    <p>Roope Poikala</p>
+    <p>Puheenjohtaja</p>
+    <p>Ynnä ry</p>
+    `,
+    author: "Roope Poikola"
   }
 ];
 
