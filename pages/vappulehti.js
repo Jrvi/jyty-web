@@ -21,9 +21,21 @@ const articles = [
     type: "article",
     title: "Teekkarit Jyväskylässä",
     content: `
-      <p>Teekkarit ovat tulleet Jyväskylään jäädäkseen. Mitä ajatuksia teekkarit, teekkarikulttuuri ja jyvääskyläläisyys yhdessä herättävät? - Itse paljasjalkaisena jyväskyläläisenä on yhä vähän outo ajatus että täällä on teekkareita. Niin pitkään kun muistan JYU on tunnettu opetuspuolen linjoista, ei teknisestä puolesta. Sitä varten ajattelin täällä olevan ammattikorkea, kertoo tilastotieteiden ainejärjestö Tiltti ry:n puheenjohtaja Juho Reiman.</p>
-      <p>Nykyisen kahden teekkarilinjan lisäksi Jyväskylään on tulossa kaksi uutta teekkarialaa, datatiede ja turvallisuusteknologia. Täten myös jyväskyläläinen teekkariyhteisö kasvaa ja kaupunkiin virtaa lisää teekkareita kaupunkilaisten iloksi. - Toivon että tilasto- ja datatieteiden tutkimusohjelman muuttaminen DI-ohjelmaksi toisi niitä uusia hakijoita alalle. Varsinkin kun kyseessä on maan ainoa tilastotieteen maisteritason ohjelma. Tilastotiede kuitenkin on modernissa informaatioyhteiskunnassa aika oleellinen ala, Juho kommentoi. Tulevat teekkarit pääsevätkin osaksi jo muutaman vuoden kehittynyttä jyvääskyläläistä teekkariyhteisöä. - Meillä on täällä mahtava [teekkari-]kulttuuri, kehuu Algo ry:n varapuheenjohtaja Essi Pakkala. Nykyään Algo on Jyväskylän ainoa teekkarikilta, mutta näin ei välttämättä ole kauaa uusien opinto-ohjelmien alkamisen jälkeen. - Koska tilastotieteen koko linjasta tulee teekkarilinja, niin Tiltistä on mitä todennäköisemmin tulossa Jyväskylän vanhin teekkarijärjestö, Tiltistä huudellaan.</p>
-      <p>Tulevaa onkin jo pohdittu ja visioitu, sillä teekkarikulttuurissa on oleellista sen eläminen ajan mukana. Teekkarit ovat kuitenkin jo jättäneet jälkensä Suomen Ateenaan, sillä esimerkiksi teekkarikasteesta on tullut tärkeä osa vapun juhlintaa. Yksi osoitus teekkarikulttuurin kehittämisestä on tämä ensimmäinen jyväskyläläisten teekkareiden tekemä vappulehti. - Pian meillä yhtä iso vappulehti kuin Julkku ja Äpy, Essi visioi. Tätä vappulehtipuutosta JYTY on lähtenyt ensimmäisenä korjaamaan. Mutta aika näyttää, mitä kaikkea teekkarit ja JYTY keksivät tulevaisuudessa.</p>
+      <p>Teekkarit ovat tulleet Jyväskylään jäädäkseen. Mitä ajatuksia teekkarit, teekkarikulttuuri ja jyvääskyläläisyys yhdessä herättävät?</p>
+      <p>- Itse paljasjalkaisena jyväskyläläisenä on yhä vähän outo ajatus että täällä on teekkareita. Niin pitkään kun muistan JYU on tunnettu opetuspuolen linjoista, ei teknisestä puolesta. Sitä varten ajattelin täällä olevan ammattikorkea, kertoo tilastotieteiden ainejärjestö Tiltti ry:n puheenjohtaja Juho Reiman.</p>
+      <p>Eikä tässä vielä kaikki. Nyt kun teekkareita on saatu Jyväskylään, lisää on tulossa. Nykyisen kahden teekkarilinjan lisäksi Jyväskylään on tulossa kaksi uutta teekkarialaa, datatiede ja turvallisuusteknologia. Täten myös jyväskyläläinen teekkariyhteisö kasvaa ja kaupunkiin virtaa lisää teekkareita kaupunkilaisten iloksi. Nykyiset teekkarit odottavat innoissaan lisää teekkareita Suomen Ateenaan.</p>
+      <p>- Mahtavaa saada monipuolisuutta Jyväskylän teekkarikenttään, kommentoi Algo ry:n puheenjohtaja Rene Kangas.</p>
+      <p<Myös muualla uusia teekkarialoja odotetaan innolla. Uusien tekniikan alojen kautta teekkareita tulee myös IT-tiedekunnan ulkopuolelle.</p<
+      <p>- Toivon että tilasto- ja datatieteiden tutkimusohjelman muuttaminen DI-ohjelmaksi toisi niitä uusia hakijoita alalle. Varsinkin kun kyseessä on maan ainoa tilastotieteen maisteritason ohjelma. Tilastotiede kuitenkin on modernissa informaatioyhteiskunnassa aika oleellinen ala, Juho kommentoi.</p>
+      <p>Tulevat teekkarit pääsevätkin osaksi jo muutaman vuoden kehittynyttä jyvääskyläläistä teekkariyhteisöä. Tulevia opiskelijoita nykyinen meininki teekkareiden kesken lämmittää yhtä varmasti ja mukavasti kuin sauna teekkarikasteen jälkeen.</p>
+      <p>- Meillä on täällä mahtava [teekkari-]kulttuuri, kehuu Algo ry:n varapuheenjohtaja Essi Pakkala erään tapahtuman jatkoilla.</p>
+      <p>- Pikkuhiljaa teekkarikulttuuri on alkanut iskostumaan ja vakiintumaan Jyväskylässä, ja perinteiset teekkaritapahtumat ovat jo tärkeä osa kulttuuria, komppaa Rene.</p>
+      <p>Nykyään Algo on Jyväskylän ainoa teekkarikilta, mutta näin ei välttämättä ole kauaa uusien opinto-ohjelmien alkamisen jälkeen.</p>
+      <p>- Koska tilastotieteen koko linjasta tulee teekkarilinja, niin Tiltistä on mitä todennäköisemmin tulossa Jyväskylän vanhin teekkarijärjestö, Tiltistä Juho visioi.</p>
+      <p>Tulevaa onkin jo pohdittu ja visioitu, sillä teekkarikulttuurissa on oleellista sen eläminen ajan mukana. Teekkarit ovat kuitenkin jo jättäneet jälkensä täkäläiseen opiskelijakulttuuriin, sillä esimerkiksi teekkarikasteesta on tullut tärkeä osa vapun juhlintaa. Yksi osoitus teekkarikulttuurin kehittämisestä on tämä ensimmäinen jyväskyläläisten teekkareiden tekemä vappulehti.</p>
+      <p>- Pian meillä yhtä iso vappulehti kuin Julkku ja Äpy, Essi visioi.</p>
+      <p>Tätä vappulehtipuutosta JYTY on lähtenyt ensimmäisenä korjaamaan. Lehden levikkiä ynnäillessä ei ehkä heti olla samalla tasolla, mutta matka sinne on alkanut. Aika näyttää, mitä kaikkea teekkarit ja JYTY keksivät tulevaisuudessa.</p>
+      <p>- Toivottavasti JYTY:n kanssa yhdessä saadaan edistettyä teekkarikulttuuria laajemmin Jyväskylässä, Rene päättää.</p>
     `,
     author: "Lassi Laitinen"
   },
@@ -89,6 +101,66 @@ const articles = [
     `,
     image: null,
     author: "Jyväskylän teekkareiden matemaattinen tukihenkilö, Roope"
+  },
+  {
+    id: 8,
+    type: "article",
+    title: "Jyväskylän teekkarikulttuurista",
+    content: `
+    <p>On ollut ilo seurata, miten ensin Algo ja nyt jatkossa Jyväskylän teekkariyhdistys on lähtenyt rakentamaan täysin tyhjästä teekkarikulttuuria Jyväskylän yliopistoon. On suuri ponnistus perustaa uusi ainejärjestö, mutta vielä suurempi on synnyttää teekkarikulttuuria kaupunkiin ja yliopistoon, jossa sellaista ei vielä ole ollut. Ylioppilaskunnan näkökulmasta tämä on sujunut vallan mainiosti. Odotan innolla minkälaisia teekkarijäyniä saadaan vielä tulevina vuosina nähdä, kunnon hyvän mielen jäynä olisi kirsikka kakun päälle Jyväskylän teekkareille!</p>
+    <p>Lopuksi haluan antaa tsempit kaikille teille tulevien vuosien haasteisiin. Teekkareita tulee myös uusiin tiedekuntiin ja uusia kiltojakin varmaan syntynee, joten on oma haasteensa rueta luomaan yhtenäistä toimintaa usean eri järjestön kesken. Siksi onkin hienoa, että Jyväskylän teekkariyhdistys on luotu tätä silmälläpitäen jo nyt. Kastukoon teekkarit jatkossakin vappuisin ja nouskoon teekkarilakit korkealla korkeuksiin tulevinakin vuosina!</p>
+    <p>Hyvää teekkarivappua toivottaen,</p>
+    <p>Petro Pitkänen</p>
+    <p>JYYn jäsenpalvelu- ja järjestöasiantuntija</p>
+    `,
+    author: "Petro Pitkänen"
+  },
+  {
+    id: 9,
+    type: "article",
+    title: "VatelmaLimeKiliju 5l BY: Eero Holopainen",
+    content: `
+      <p>Raaka-aineet:</p>
+      <p>400g pakaste vadelma</p>
+      <p>500g sokeri</p>
+      <p>4l vettä</p>
+      <p>0.5 dl limemehua</p>
+      <p>1/5 tl hiivaa (herneen kokoinen)</p>
+      <br>
+      <p>lisäksi:</p>
+      <p>sokeria ja rusinoita pullotukseen</p>
+      <p>votkaa desinfiointiin </p>
+      <p>pulloja</p>
+      <br>
+      <p>Panokalusto:</p>
+      <p>10l ämpäri</p>
+      <p>10l ämpäri kansi</p>
+      <p>käymisastian vesilukko tiivisteellä</p>
+      <p>Lappo letku</p>
+      <br>
+      <p>Resepti:</p>
+      <p>Valmista aluksi panokalusto poraamalla reikä ämpärin kanteen, ja asentamalla siihen vesilukko. Tämän jälkeen voit halutessasi pestä ämpärin, mikäli et kaipaa lisämausteita esimerkiksi tolusta tai vanhasta oksennuksesta. Pesemisen jälkeen desinfioi astia kaatamalla sinne n. 1dl votkaa, ja ravistamalla sekä pyörittelemällä astiaa. Jos haluat votkasta lisämausteen, jätä se ämpärin pohjalle. Jos et, kaada lasiin ja juo pois.</p>
+      <p>Aloita kiljun valmistus mittaamalla 4l vettä kattilaan ja kiehauta vesi. Lisää pakastemarjat ja anna kiehua noin 2 min. Ota kattila liedeltä, ja sekoita sokerit joukkoon. Kaada seos käymisastiaan ja lisää limen mehu. Jäähdytä seos kädenlämpöiseksi ja lisää hiiva. Sulje astia tiiviisti ja anna käydä astiassa noin 1-2vko.</p>
+      <p>Astiassa käymisen Jälkeen pullota lapon avulla kilju pulloihin, sekä lisää 1 rkl sokeria pulloon, sekä yksi rusina. Siirrä pullot viikoksi käymään jääkaappiin. Tämän jälkeen rakas kiljumme on valmista nautittavaksi.</p>
+    `,
+    image: "viini.jpg",
+    author: "Eero Pitkänen"
+  },
+  {
+    id: 10,
+    type: "article",
+    title: "JYTINÄÄ teekkareiden edunvalvontaan!",
+    content: `
+    <p>Jyväskylän teekkareille on luvassa uutta potkua ja yhteisöllisyyttä, kun kaksi uutta teekkarialaa starttaavat matemaattis-luonnontieteellisessä tiedekunnassa syksyllä 2026. Uusien alojen menestyksen ja onnistuneen integraation takaamiseksi Jyväskylän teekkarikulttuuriin on tärkeää saada yhteinen ja saavutettava kattojärjestö. Kattojärjestön on tärkeää kannustaa yhteisöllisyyteen, ylläpitää ja edistää meidän omaa teekkarikulttuuriamme. Kaikista tärkeimpänä olla ylpeä ja rakentaa meidän näköistämme kulttuuria.</p>
+    <p>Kattojärjestömme konkreettiset edunvalvonnan ja muut tehtävät:</p>
+    <p>- Lakkisääntöjen hallinta ja lakkitilauksen toteuttaminen</p>
+    <p>- Uusien teekkarien orientaatio osaksi teekkarikultuuria.</p>
+    <p>- Osallistuminen teekkariperinne tapahtumien järjestämiseen</p>
+    <p>- Osallistua ja toimia teekkarien äänenä yliopiston eri tiedekuntien kehitys tapaamisissa.</p>
+    <p>- Ja viimeisenä olla luomassa Jyväskylän ensimmäistä teekkarilehteä</p>
+    <p>Olemme monitieteellinen perustajajoukko, jonka yhteinen teekkarisydän sykkii Jyväskylän oman teekkariyhteisön rakentamiselle. Haluamme luoda kampukselle kulttuurin, jossa rautainen osaaminen, rennot sitsit, perinteinen Wappuhulluus ja Keski-Suomen omaleimainen twisti elävät sulassa sovussa, ja samalla päivittää teekkariperinteet nykypäivän arvoihin. Jos teekkarihumu ja perinteiden luominen sykahdyttää, niin liity mukaan syksyllä. tule vaikuttamaan siihen, miltä Jyväskylän teekkarikulttuuri näyttää vuosikymmeniksi eteenpäin!</p>
+    `,
+    author: "Eemil Hukkanen ja Juho Järvi"
   }
 ];
 
