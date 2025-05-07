@@ -1,11 +1,12 @@
+import styles from "../styles/saannot.module.css";
 import Layout from "../components/Layout";
 
 export default function Saannot() {
   return (
     <Layout>
-      <div className="container">
-        <h1 className="title">Jyväskylän Teekkariyhdistys ry - Säännöt</h1>
-        <div className="rules">
+      <div className={styles.rules}>
+        <h1 className={styles.title}>Jyväskylän Teekkariyhdistys ry - Säännöt</h1>
+        <div>
           <h2>1§ Yhdistyksen nimi ja kotipaikka</h2>
           <p>Yhdistyksen nimi on Jyväskylän teekkariyhdistys ry ja sen kotipaikka on Jyväskylä.</p>
 

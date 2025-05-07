@@ -1,86 +1,47 @@
+
 import { useState } from "react";
 import Link from "next/link";
+import styles from "../styles/layout.module.css";
 
 export default function Navbar() {
-  const [hoveredLink, setHoveredLink] = useState(null);
-  const [menuOpen, setMenuOpen] = useState(false); // Tila valikon avaamiselle
-
-  const handleMouseEnter = (link) => setHoveredLink(link);
-  const handleMouseLeave = () => setHoveredLink(null);
-  const toggleMenu = () => setMenuOpen(!menuOpen); // Valikon avaaminen/sulkeminen
+  const [navOpen, setNavOpen] = useState(false);
 
   return (
-    <header>
-      <div className="logo-container">
-        <div className="logo">
-          <Link href="/">
-            <img src="logo.png" alt="Jyty Logo" />
-          </Link>
-        </div>
-        <Link href="/" className="logo-text desktop-only">
-          Jyväskylän Teekkariyhdistys
+    <header className={styles.header}>
+      <div className={styles["logo-container"]}>
+        <Link href="/" className={styles["logo-link"]}>
+          <div className={styles.logo}>
+            <img src="/logo.png" alt="JYTY Logo" />
+            <span className={`${styles["logo-text"]} ${styles["desktop-only"]}`}>
+              Jyväskylän Teekkariyhdistys ry
+            </span>
+          </div>
         </Link>
+
         <button
-          className="menu-toggle mobile-only"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
+          className={styles["menu-toggle"]}
+          onClick={() => setNavOpen(!navOpen)}
         >
           ☰
         </button>
       </div>
-      <nav className={`nav ${menuOpen ? "open" : ""}`}>
-        <ul className="nav-list">
-          <li className="nav-item">
-            <Link
-              href="/vappulehti"
-              className="nav-link"
-              onMouseEnter={() => handleMouseEnter("vappulehti")}
-              onMouseLeave={handleMouseLeave}
-              style={{
-                color: hoveredLink === "vappulehti" ? "#ff4500" : undefined,
-              }}
-            >
-              Vappulehti
-            </Link>
+
+      <nav className={`${styles.nav} ${navOpen ? styles.open : ""}`}>
+        <ul className={styles["nav-list"]}>
+          <li className={styles["nav-item-dropdown"]}>
+            <span className={styles["nav-link"]}>Yhdistys</span>
+            <ul className={styles["dropdown-menu"]}>
+              <li><Link href="/hallitus" className={styles["nav-link"]}>Hallitus</Link></li>
+              <li><Link href="/saannot" className={styles["nav-link"]}>Säännöt</Link></li>
+              <li><Link href="/lakkisaannot" className={styles["nav-link"]}>Lakkisäännöt</Link></li>
+            </ul>
           </li>
-          <li className="nav-item">
-            <Link
-              href="/vappustriimi"
-              className="nav-link"
-              onMouseEnter={() => handleMouseEnter("vappustriimi")}
-              onMouseLeave={handleMouseLeave}
-              style={{
-                color: hoveredLink === "vappustriimi" ? "#ff4500" : undefined,
-              }}
-            >
-              Vappustriimi
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              href="/hallitus"
-              className="nav-link"
-              onMouseEnter={() => handleMouseEnter("hallitus")}
-              onMouseLeave={handleMouseLeave}
-              style={{
-                color: hoveredLink === "hallitus" ? "#ff4500" : undefined,
-              }}
-            >
-              Hallitus
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              href="/saannot"
-              className="nav-link"
-              onMouseEnter={() => handleMouseEnter("saannot")}
-              onMouseLeave={handleMouseLeave}
-              style={{
-                color: hoveredLink === "saannot" ? "#ff4500" : undefined,
-              }}
-            >
-              Säännöt
-            </Link>
+
+          <li className={styles["nav-item-dropdown"]}>
+            <span className={styles["nav-link"]}>Julkaisut</span>
+            <ul className={styles["dropdown-menu"]}>
+              <li><Link href="/vappulehti" className={styles["nav-link"]}>Vappulehti 2025</Link></li>
+            </ul>
           </li>
         </ul>
       </nav>

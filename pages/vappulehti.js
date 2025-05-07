@@ -1,3 +1,4 @@
+import styles from "../styles/vappulehti.module.css";
 import Crossword from "../components/Crossword";
 import Layout from "../components/Layout";
 
@@ -174,55 +175,90 @@ const articles = [
     <p>Ynnä ry</p>
     `,
     author: "Roope Poikola"
+  },
+  {
+    id: 12,
+    type: "article",
+    title: "Pullat hävisi, mutta yhteishenki jäi – Kattilan kaappimurto järkytti Algoa ja Linkkiä.",
+    content: `
+      <p>Se tapahtui yllättäen. Kattilan yhteistilan kaapin ovi oli auki – eikä sisällä odottanut tavallinen näky. Pullat olivat kadonneet. Jäljellä oli vain tyhjä hylly ja tunne, että joku oli käynyt, ottanut, ja jättänyt jälkeensä hiljaisen viestin: kukaan ei ole turvassa.</p>
+      <p>Murtojälkiä löytyi. Silminnäkijöiden mukaan näytti siltä kuin sorkkarautaa olisi käytetty. Tekijä tiesi, mitä halusi – ja otti sen. Kohteena ei ollut raha, elektroniikka tai edes kahvimitta, vaan pulla.</p>
+      <p>Tämä oli isku suoraan sydämeen. Ei ainejärjestön sydämeen – vaan sen makeanhampaaseen.</p>
+      <p>Linkki ry:n sihteeri Juho Ropanen oli yksi ensimmäisistä, jotka kommentoivat tapahtunutta. "Niin kuin sorkkarautaa olisi käytetty", hän toteaa. Ropasen mukaan teko ei vaikuta harkitulta tai suunnitellulta osaksi laajempaa rikosaaltoa, mutta mahdollisuutta toistuviin pullavarkauksiin ei voi sulkea pois. "Rosvot tajusivat, että hemmetti, pullahan on hyvää. Vois alkaa varastelemaan pullia eri paikoista. Pitää kattoa, jos alkaa pullia häviämään muistakin paikoista."</p>
+      <p>Pulla ei ollut kuitenkaan pelkkä leivonnainen – se oli yhteisöllisyyden symboli, joka katosi kuin märkä rätti varastetun kaapin hyllyltä. Eikä tapahtumaa ole jääty käsittelemättä vain hallituksen pöydissä. Kampuksen käytävillä kuultiin lukuisia tunteikkaita reaktioita.</p>
+      <p>”Ou nounou la polizia la pullavaras”, tiivistää Noora Pura.</p>
+      <p>”Nounounou la pullava nou”, kommentoi Eelis Kiiskinen puolestaan.</p>
+      <p>”Ei tullut pullaa tänäänkään”, totesi Jimi Kortelainen, kun taas Joonas Paasovaara vain toisti hämmentyneenä: ”En oo niitä pullia nähnyt. En oo niitä pullia nähnyt.”</p>
+      <p>Ropanen pohti haastattelussa myös syvällisempää kysymystä: jos hän itse olisi pulla, kumman kohtalon hän valitsisi – tulla syödyksi vai päätyä museoesineeksi. ”Museo kuulostaa niin paljon paremmalta. Se olisi peruskohtalo.”</p>
+      <p>Tapaus on herättänyt laajaa keskustelua ainejärjestöjen turvallisuudesta. Kameravalvontaa on jo käytössä ja valmiudet sen laajentamiseen on olemassa. Samalla tapahtuma on nostanut esiin jotain syvempää.</p>
+      <p>”Kyllähän tämä yhdistää, kun jaetaan tilat yhdessä. Kaikki pullasta tykkää eli kyllä osui arkaan kohtaan. Toivon hartaasti, että löydetään toleranssi pullavarkauksille.”</p>
+      <p>Yllättävä kommentti saatiin myös ulkomailta asti – nimittäin Itävallasta, josta Lauri Mäkynen lähetti ääniviestillä oman näkemyksensä tapahtuneesta. Hänen sanansa eivät varsinaisesti valaise tapahtumaa, mutta heijastavat tunnelmaa täydellisesti.</p>
+      <p>”Okei, ekalle bussipysäkille selvitty, mitä vittua täällä lukeee… ei mitään, ei mitää, vittuuu, mihin vittuu mä, okei.”</p>
+      <p>Ehkä juuri tämä kuvaa parhaiten koko tapahtumaa. Kukaan ei tiedä, mitä tapahtui. Mutta kaikki tietävät, että pullat ovat poissa.</p>
+    `,
+    author: "Theodore Veistos"
   }
 ];
 
-export default function Vappu() {
+export default function Vappulehti() {
   return (
     <Layout>
-      <div className="container">
-        <h1 className="vappu-title">Jyty Vapu_leho</h1>
-        
-        {/* Sisällysluettelo */}
-        <nav className="table-of-contents">
+      <div>
+        <h1 className={styles["vappu-title"]}>Vappulehti 2025</h1>
+
+        <div className={styles["table-of-contents"]}>
           <h2>Sisällysluettelo</h2>
           <ul>
-            {articles
-              .filter((item) => item.type === "article")
-              .map((item) => (
-                <li key={item.id}>
-                  <a href={`#article-${item.id}`}>{item.title}</a>
-                </li>
-              ))}
+            {articles.filter(a => a.type === "article").map((article) => (
+              <li key={article.id}>
+                <a href={`#article-${article.id}`}>{article.title}</a>
+              </li>
+            ))}
           </ul>
-        </nav>
-
-        <div>
-          {articles.map((item) =>
-            item.type === "article" ? (
-              <div key={item.id} id={`article-${item.id}`} className="article-container">
-                <h2 className="article-title">{item.title}</h2>
-                {item.image && (
-                  <figure className="article-figure">
-                    <img src={item.image} alt={item.title} className="article-image" />
-                    <figcaption className="article-caption">{`Kuva: ${item.title}`}</figcaption>
-                  </figure>
-                )}
-                <div
-                  className="article-content"
-                  dangerouslySetInnerHTML={{ __html: item.content }}
-                ></div>
-                <p className="article-author">{`Kirjoittanut: ${item.author}`}</p>
-              </div>
-            ) : (
-              <blockquote key={item.id} className="quote-container">
-                <p className="quote-content">{item.content}</p>
-                <footer className="quote-author">{`- ${item.author}`}</footer>
-              </blockquote>
-            )
-          )}
         </div>
-        <Crossword />
+
+        {articles.map((article, index) => {
+          if (article.type === "quote") {
+            return (
+              <div key={index} className={styles["quote-container"]}>
+                <div className={styles["quote-content"]}>{article.content}</div>
+                <div className={styles["quote-author"]}>— {article.author}</div>
+              </div>
+            );
+          }
+
+          return (
+            <div
+              key={index}
+              id={`article-${article.id}`}
+              className={styles["article-container"]}
+            >
+              <h2 className={styles["article-title"]}>{article.title}</h2>
+
+              {article.image && (
+                <div className={styles["article-figure"]}>
+                  <img
+                    src={`/${article.image}`}
+                    alt={article.title}
+                    className={styles["article-image"]}
+                  />
+                  {article.caption && (
+                    <div className={styles["article-caption"]}>
+                      {article.caption}
+                    </div>
+                  )}
+                </div>
+              )}
+
+              <div
+                className={styles["article-content"]}
+                dangerouslySetInnerHTML={{ __html: article.content }}
+              />
+
+              <div className={styles["article-author"]}>— {article.author}</div>
+            </div>
+          );
+        })}
       </div>
     </Layout>
   );

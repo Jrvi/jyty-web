@@ -1,3 +1,4 @@
+import styles from "../styles/hallitus.module.css";
 import Layout from "../components/Layout";
 
 const members = [
@@ -52,19 +53,18 @@ export default function Hallitus() {
   return (
     <Layout>
       <div>
-        <h1 className="hallitus-title">Hallitus</h1>
-        <div className="hallitus-container">
-          {members.map((member) => (
-            <div key={member.name} className="hallitus-card">
-              <img src={member.image} alt={member.name} />
+        <h1 className={styles["hallitus-title"]}>Hallituksen jäsenet</h1>
+        <div className={styles["hallitus-container"]}>
+          {members.map((member, i) => (
+            <div key={i} className={styles["hallitus-card"]}>
+              <img src={`/${member.image}`} alt={member.name} />
               <h2>{member.name}</h2>
               <p>{member.title}</p>
             </div>
           ))}
         </div>
-        <div className="hallitus-contact">
-          <h2>Ota yhteyttä</h2>
-          <p>Sähköposti: <a href="mailto:jyvaskylanteekkarit@gmail.com">jyvaskylanteekkarit@gmail.com </a></p>
+        <div className={styles["hallitus-contact"]}>
+          <a href="mailto:hallitus@example.com">Ota yhteyttä hallitukseen</a>
         </div>
       </div>
     </Layout>

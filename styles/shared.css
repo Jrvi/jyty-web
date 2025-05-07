@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=VT323&display=swap');
+
+/* Väriteema */
+:root {
+  --header-bg: #e6e6e6;
+  --footer-bg: #e6e6e6;
+  --text-main: #111111;
+  --accent-red: #e60026;
+  --light-bg: #fffdfb;
+}
+
+/* Perusasetukset */
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-bg);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-main);
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.monospace {
+  font-family: 'VT323', monospace;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-main);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-red);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
