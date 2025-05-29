@@ -64,7 +64,7 @@ export default function Hallitus() {
           ))}
         </div>
         <div className={styles["hallitus-contact"]}>
-          <a href="mailto:hallitus@example.com">Ota yhteyttä hallitukseen</a>
+          <a href="mailto:jyvaskylanteekkarit@gmail.com">Ota yhteyttä hallitukseen</a>
         </div>
       </div>
     </Layout>
